@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"99999adc-8913-44ae-baba-6b09916e1e31",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>RickAndMorty.Rick.rick-get</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-09-16 11:43:23 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Get Rick name</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>Get Morty name</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">RickAndMorty/Rick/rick-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Rick And Morty</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">all</a><a class="badge badge-primary" href="karate-tags.html">rick-get</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Get Rick name</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>469</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api/character/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">451</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">11:43:22.614 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/1
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:43:22.965 response time in milliseconds: 318
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 103476
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 16 Sep 2023 09:43:23 GMT
+1 &lt; Etag: W/&quot;a9f-I68Cx5oSPFclkl+Wy2Fr9jNsFS8&quot;
+1 &lt; Expires: Mon, 18 Sep 2023 04:58:47 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01HAENZ6M03NZD5W9Y5ZZ21ZM8
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Rick Sanchez&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/3&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/1.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;,&quot;https://rickandmortyapi.com/api/episode/42&quot;,&quot;https://rickandmortyapi.com/api/episode/43&quot;,&quot;https://rickandmortyapi.com/api/episode/44&quot;,&quot;https://rickandmortyapi.com/api/episode/45&quot;,&quot;https://rickandmortyapi.com/api/episode/46&quot;,&quot;https://rickandmortyapi.com/api/episode/47&quot;,&quot;https://rickandmortyapi.com/api/episode/48&quot;,&quot;https://rickandmortyapi.com/api/episode/49&quot;,&quot;https://rickandmortyapi.com/api/episode/50&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/1&quot;,&quot;created&quot;:&quot;2017-11-04T18:48:46.250Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def origin = $.origin</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $.name == &quot;Rick Sanchez&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match origin.name == &quot;Earth (C-137)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">all</a><a class="badge badge-primary" href="karate-tags.html">morty-get</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">Get Morty name</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>162</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api/character/2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">160</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">11:43:23.004 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/2
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:43:23.162 response time in milliseconds: 125
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 64907
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 16 Sep 2023 09:43:23 GMT
+1 &lt; Etag: W/&quot;a6e-zQHAPIKFfD+Wv+P+4aCju24Mapw&quot;
+1 &lt; Expires: Mon, 18 Sep 2023 15:41:36 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01HAENZ6SVNE1MD92KWT0NVXMB
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:2,&quot;name&quot;:&quot;Morty Smith&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/3&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/2.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;,&quot;https://rickandmortyapi.com/api/episode/42&quot;,&quot;https://rickandmortyapi.com/api/episode/43&quot;,&quot;https://rickandmortyapi.com/api/episode/44&quot;,&quot;https://rickandmortyapi.com/api/episode/45&quot;,&quot;https://rickandmortyapi.com/api/episode/46&quot;,&quot;https://rickandmortyapi.com/api/episode/47&quot;,&quot;https://rickandmortyapi.com/api/episode/48&quot;,&quot;https://rickandmortyapi.com/api/episode/49&quot;,&quot;https://rickandmortyapi.com/api/episode/50&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/2&quot;,&quot;created&quot;:&quot;2017-11-04T18:50:21.651Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def origin = $.origin</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $.name == &quot;Morty Smith&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match origin.name == &quot;unknown&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
