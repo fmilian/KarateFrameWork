@@ -1,9 +1,13 @@
 @all
 Feature: Rick And Morty
 
+  Background:
+    * def baseUrl = 'https://rickandmortyapi.com/api/character/<id>'
+
   @rick-get
   Scenario: Get Rick name
-    Given url 'https://rickandmortyapi.com/api/character/1'
+    * replace baseUrl.id = '1'
+    Given url baseUrl
     When method GET
     Then status 200
     * def origin = $.origin
@@ -12,7 +16,8 @@ Feature: Rick And Morty
 
   @morty-get
   Scenario: Get Morty name
-    Given url 'https://rickandmortyapi.com/api/character/2'
+    * replace baseUrl.id = '2'
+    Given url baseUrl
     When method GET
     Then status 200
     * def origin = $.origin
